@@ -39,7 +39,9 @@ CREATE TABLE RetailSales
     cogs FLOAT,
     total_sale FLOAT
 );
+
 '''
+**
 ### 2. Data Exploration & Cleaning**
 
 - **Record Count**: Determine the total number of records in the dataset.
@@ -68,7 +70,7 @@ WHERE
 ### 3. Data Analysis & Findings
 
 The following SQL queries were developed to answer specific business questions:
-```sql
+
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
 
 SELECT *
