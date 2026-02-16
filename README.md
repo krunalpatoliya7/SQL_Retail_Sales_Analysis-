@@ -72,7 +72,7 @@ WHERE
 The following SQL queries were developed to answer specific business questions:
 
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
-
+```sql
 SELECT *
 FROM RetailSales
 WHERE sale_date = '2022-11-05';
@@ -222,6 +222,7 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
 Thank you for your support, and I look forward to connecting with you!
+
 
 
 
