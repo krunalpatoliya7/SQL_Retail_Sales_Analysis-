@@ -22,7 +22,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 - **Database Creation**: The project starts by creating a database named `p1_retail_db`.
 - **Table Creation**: A table named `RetailSales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
-
+```sql
 CREATE DATABASE p1_retail_db;
 
 CREATE TABLE RetailSales
@@ -39,7 +39,7 @@ CREATE TABLE RetailSales
     cogs FLOAT,
     total_sale FLOAT
 );
-
+'''
 
 ### 2. Data Exploration & Cleaning
 
@@ -71,34 +71,37 @@ WHERE
 The following SQL queries were developed to answer specific business questions:
 
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
-
+```sql
 SELECT *
 FROM RetailSales
 WHERE sale_date = '2022-11-05';
+'''
 
 
 2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+```sql
 select * 
 from RetailSales
 where category = 'clothing' 
 	and quantiy >=4
 	and Month(sale_date) = 11
 	and YEAR(sale_date) = 2022;
+'''
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
-
+```sql
 select distinct(category),
 sum(Total_sale) as NetSales,
 count(*) total_orders
 from RetailSales
 group by category
-
+'''
 
 4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
-
+```sql
 select AVG(age) as AverageAge
 	from RetailSales
 where category = 'Beauty'
-
+'''
 
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
@@ -217,6 +220,7 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
 Thank you for your support, and I look forward to connecting with you!
+
 
 
 
